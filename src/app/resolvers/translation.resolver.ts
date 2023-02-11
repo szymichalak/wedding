@@ -12,7 +12,7 @@ export class TranslationResolver implements Resolve<void> {
   public async resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Promise<void> {
     const language: string = getLanguage(route.params)
     this._localizationService.localization = await read(
-      this._httpClient.get<ILocalization>(`/assets/i18n/${language}.json`)
+      this._httpClient.get<ILocalization>(`./assets/i18n/${language}.json`)
     );
   }
 }

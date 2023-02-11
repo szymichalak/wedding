@@ -1,8 +1,4 @@
-<router-outlet></router-outlet>
-
-<div *ngIf="secondsLeft | async | toTimeDelta as timeDelta">
-    <p>{{timeDelta.days}} days</p>
-    <p>{{timeDelta.hours}} hours</p>
-    <p>{{timeDelta.minutes}} minutes</p>
-    <p>{{timeDelta.seconds}} seconds</p>
+<div class="u-position--relative">
+    <app-background></app-background>
+    <router-outlet></router-outlet>
 </div>

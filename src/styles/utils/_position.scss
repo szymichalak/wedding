@@ -1,0 +1,27 @@
+.u-position {
+  &--absolute {
+    position: absolute;
+  }
+
+  &--relative {
+    position: relative;
+  }
+
+  &--top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &--bottom-right {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
+
+  &--bottom-left {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+  }
+}

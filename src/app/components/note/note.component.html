@@ -1,0 +1,14 @@
+<div class="note" *ngIf="language">
+    <div class="note__content">
+        <span class="u-margin-bottom--m"> {{ 'title' | langTranslate : language }}</span>
+        <div *ngIf="secondsLeft | async | toTimeDelta as timeDelta" class="u-margin-bottom--m">
+            <div><strong>{{timeDelta.days}}</strong> {{ 'days' | langTranslate : language}}</div>
+            <div><strong>{{timeDelta.hours}}</strong> {{ 'hours' | langTranslate : language}}</div>
+            <div><strong>{{timeDelta.minutes}}</strong> {{ 'minutes' | langTranslate : language}}</div>
+            <div><strong>{{timeDelta.seconds}}</strong> {{ 'seconds' | langTranslate : language}}</div>
+        </div>
+        <a class="c-button" target="_blank" rel="noopener noreferrer" href="{{liveHref}}">
+            {{ 'watchLive' | langTranslate : language }}
+        </a>
+    </div>
+</div>

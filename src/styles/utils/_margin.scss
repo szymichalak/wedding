@@ -1,0 +1,9 @@
+@import "src/styles/variables";
+
+.u-margin {
+  &-bottom {
+    &--m {
+      margin-bottom: $size-m;
+    }
+  }
+}

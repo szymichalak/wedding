@@ -1,0 +1,18 @@
+@import "src/styles/variables";
+
+.c-flag-icon {
+  width: 2em;
+  height: 2em;
+  position: absolute;
+  top: 0;
+  right: 0.5em;
+  cursor: pointer;
+  z-index: $layer-attached;
+}
+
+@media only screen and (min-width: $screen-medium) {
+  .c-flag-icon {
+    width: 4em;
+    height: 4em;
+  }
+}

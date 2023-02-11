@@ -1,1 +1,6 @@
-main page
+<ng-container  *ngIf="language | async as language" >
+    <img src="/assets/flags/pl.png" alt="pl-flag" class="c-flag-icon" *ngIf="language === 'en'"  [routerLink]="['/', 'pl']" />
+    <img src="/assets/flags/en.png" alt="en-flag" class="c-flag-icon" *ngIf="language === 'pl'"  [routerLink]="['/', 'en']" />
+
+    <app-note [language]="language"></app-note>
+</ng-container>

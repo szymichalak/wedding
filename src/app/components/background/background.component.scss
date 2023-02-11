@@ -1,0 +1,59 @@
+@import "src/styles/variables";
+
+.background {
+  width: 100vw;
+  height: 100vh;
+  background-color: $background-color;
+}
+
+.flowers {
+  &--bottom-right {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    transform: scale(0.2) translateX(200%) translateY(200%);
+  }
+
+  &--top-left {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: scale(0.2) translateX(-200%) translateY(-200%);
+  }
+}
+
+@media only screen and (min-width: $screen-medium) {
+  .flowers {
+    &--bottom-right {
+      transform: scale(0.3) translateX(117%) translateY(117%);
+    }
+
+    &--top-left {
+      transform: scale(0.3) translateX(-117%) translateY(-117%);
+    }
+  }
+}
+
+@media only screen and (min-width: $screen-large) {
+  .flowers {
+    &--bottom-right {
+      transform: scale(0.4) translateX(75%) translateY(75%);
+    }
+
+    &--top-left {
+      transform: scale(0.4) translateX(-75%) translateY(-75%);
+    }
+  }
+}
+
+@media only screen and (min-width: $screen-extra-large) {
+  .flowers {
+    &--bottom-right {
+      transform: scale(0.5) translateX(50%) translateY(50%);
+    }
+
+    &--top-left {
+      transform: scale(0.5) translateX(-50%) translateY(-50%);
+    }
+  }
+}

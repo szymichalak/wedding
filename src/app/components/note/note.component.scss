@@ -1,0 +1,44 @@
+@import "src/styles/variables";
+
+.note {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__content {
+    padding: 32px 64px;
+    text-align: center;
+    box-shadow: $elevation-01;
+    min-width: $note-width;
+  }
+}
+
+@media only screen and (min-width: $screen-medium) {
+  .note {
+    &__content {
+      min-width: $note-width---m;
+    }
+  }
+}
+
+@media only screen and (min-width: $screen-large) {
+  .note {
+    &__content {
+      min-width: $note-width---l;
+    }
+  }
+}
+
+@media only screen and (min-width: $screen-extra-large) {
+  .note {
+    &__content {
+      min-width: $note-width---xl;
+    }
+  }
+}
+

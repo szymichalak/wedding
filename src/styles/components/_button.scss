@@ -1,0 +1,22 @@
+@import "src/styles/variables";
+
+.c-button {
+    color: $color;
+    background-color: $button-color;
+    border-radius: $size-m;
+    cursor: pointer;
+    font-size: $size-m;
+    padding: $size-m $size-xl;
+    border-width: 0;
+    text-decoration: none;
+    line-height: $size-xxl;
+
+  &:hover {
+    background-color: rgba($button-color, 0.8);
+  }
+
+  &:active {
+    position: relative;
+    top: $size-hairline;
+  }
+}

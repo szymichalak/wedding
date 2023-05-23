@@ -20,7 +20,7 @@ const resolvers: Provider[] = [TranslationResolver, TranslatePipe];
 const providers: Provider[] = [
   {
     provide: LIVE_HREF,
-    useValue: 'https://przekazmszy.pl/kroscienko2'
+    useValue: 'https://przekazmszy.pl/kroscienko1'
   }
 ];
 

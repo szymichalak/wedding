@@ -9,7 +9,7 @@ import {LIVE_HREF} from "@app/app.injectables";
   styleUrls: ['note.component.scss']
 })
 export class NoteComponent {
-  private readonly _weddingDate: Date = new Date(Date.UTC(2023, 7, 12, 13, 0, 0));
+  private readonly _weddingDate: Date = new Date(Date.UTC(2023, 7, 12, 12, 0, 0));
   private readonly _currentDate: Date = new Date();
   private readonly _timer: Observable<number> = timer(0, 1000);
 
